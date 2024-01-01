@@ -12,3 +12,5 @@ Git workflow to reconcile your branch with main
    `git push --force`
 
 - [2024-01-01] fix: small typo in docs — 2024-01-01
+
+- [2024-01-01] chore: refresh examples — 2024-01-01
