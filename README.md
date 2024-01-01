@@ -10,3 +10,5 @@ Git workflow to reconcile your branch with main
 4. `git rebase main (conflicts possible)`
 5. after you finish
    `git push --force`
+
+- [2024-01-01] fix: small typo in docs — 2024-01-01
