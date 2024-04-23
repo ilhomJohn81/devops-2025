@@ -156,3 +156,5 @@ Git workflow to reconcile your branch with main
 - [2024-04-22] fix: small typo in docs — 2024-04-22
 
 - [2024-04-23] docs: add note about experiment — 2024-04-23
+
+- [2024-04-23] chore(docs): update README — 2024-04-23
