@@ -202,3 +202,5 @@ Git workflow to reconcile your branch with main
 - [2024-06-05] fix: small typo in docs — 2024-06-05
 
 - [2024-06-05] docs: add note about experiment — 2024-06-05
+
+- [2024-06-06] docs: add note about experiment — 2024-06-06
