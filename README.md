@@ -248,3 +248,5 @@ Git workflow to reconcile your branch with main
 - [2024-07-02] style: reformat README section — 2024-07-02
 
 - [2024-07-03] fix: small typo in docs — 2024-07-03
+
+- [2024-07-03] style: reformat README section — 2024-07-03
