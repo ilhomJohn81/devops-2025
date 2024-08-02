@@ -292,3 +292,5 @@ Git workflow to reconcile your branch with main
 - [2024-07-31] docs: add note about experiment — 2024-07-31
 
 - [2024-08-01] docs: add note about experiment — 2024-08-01
+
+- [2024-08-02] chore(docs): update README — 2024-08-02
