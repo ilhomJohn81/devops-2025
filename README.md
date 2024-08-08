@@ -300,3 +300,5 @@ Git workflow to reconcile your branch with main
 - [2024-08-06] fix: small typo in docs — 2024-08-06
 
 - [2024-08-07] docs: add note about experiment — 2024-08-07
+
+- [2024-08-08] fix: small typo in docs — 2024-08-08
