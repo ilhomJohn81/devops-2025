@@ -308,3 +308,5 @@ Git workflow to reconcile your branch with main
 - [2024-08-09] chore: refresh examples — 2024-08-09
 
 - [2024-08-09] docs: add note about experiment — 2024-08-09
+
+- [2024-08-13] docs: add note about experiment — 2024-08-13
