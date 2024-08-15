@@ -314,3 +314,5 @@ Git workflow to reconcile your branch with main
 - [2024-08-14] style: reformat README section — 2024-08-14
 
 - [2024-08-14] docs: add note about experiment — 2024-08-14
+
+- [2024-08-15] fix: small typo in docs — 2024-08-15
