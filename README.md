@@ -390,3 +390,5 @@ Git workflow to reconcile your branch with main
 - [2024-09-27] style: reformat README section — 2024-09-27
 
 - [2024-10-01] chore(docs): update README — 2024-10-01
+
+- [2024-10-01] docs: add note about experiment — 2024-10-01
