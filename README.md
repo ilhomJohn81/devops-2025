@@ -394,3 +394,5 @@ Git workflow to reconcile your branch with main
 - [2024-10-01] docs: add note about experiment — 2024-10-01
 
 - [2024-10-02] docs: add note about experiment — 2024-10-02
+
+- [2024-10-04] fix: small typo in docs — 2024-10-04
