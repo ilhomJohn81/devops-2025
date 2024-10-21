@@ -416,3 +416,5 @@ Git workflow to reconcile your branch with main
 - [2024-10-17] chore: refresh examples — 2024-10-17
 
 - [2024-10-18] fix: small typo in docs — 2024-10-18
+
+- [2024-10-21] chore(docs): update README — 2024-10-21
