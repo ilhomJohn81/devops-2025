@@ -476,3 +476,5 @@ Git workflow to reconcile your branch with main
 - [2024-11-18] fix: small typo in docs — 2024-11-18
 
 - [2024-11-21] fix: small typo in docs — 2024-11-21
+
+- [2024-11-22] fix: small typo in docs — 2024-11-22
