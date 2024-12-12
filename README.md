@@ -502,3 +502,5 @@ Git workflow to reconcile your branch with main
 - [2024-12-10] chore: refresh examples — 2024-12-10
 
 - [2024-12-11] fix: small typo in docs — 2024-12-11
+
+- [2024-12-12] docs: add note about experiment — 2024-12-12
