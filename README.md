@@ -508,3 +508,5 @@ Git workflow to reconcile your branch with main
 - [2024-12-13] fix: small typo in docs — 2024-12-13
 
 - [2024-12-16] fix: small typo in docs — 2024-12-16
+
+- [2024-12-16] style: reformat README section — 2024-12-16
