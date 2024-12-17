@@ -512,3 +512,5 @@ Git workflow to reconcile your branch with main
 - [2024-12-16] style: reformat README section — 2024-12-16
 
 - [2024-12-17] chore(docs): update README — 2024-12-17
+
+- [2024-12-17] docs: add note about experiment — 2024-12-17
