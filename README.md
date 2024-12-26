@@ -532,3 +532,5 @@ Git workflow to reconcile your branch with main
 - [2024-12-25] fix: small typo in docs — 2024-12-25
 
 - [2024-12-26] fix: small typo in docs — 2024-12-26
+
+- [2024-12-26] style: reformat README section — 2024-12-26
