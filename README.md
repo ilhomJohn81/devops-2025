@@ -614,3 +614,5 @@ Git workflow to reconcile your branch with main
 - [2025-02-07] fix: small typo in docs — 2025-02-07
 
 - [2025-02-11] docs: add note about experiment — 2025-02-11
+
+- [2025-02-11] fix: small typo in docs — 2025-02-11
