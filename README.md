@@ -622,3 +622,5 @@ Git workflow to reconcile your branch with main
 - [2025-02-17] fix: small typo in docs — 2025-02-17
 
 - [2025-02-19] style: reformat README section — 2025-02-19
+
+- [2025-02-19] fix: small typo in docs — 2025-02-19
