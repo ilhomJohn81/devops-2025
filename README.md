@@ -646,3 +646,5 @@ Git workflow to reconcile your branch with main
 - [2025-03-03] style: reformat README section — 2025-03-03
 
 - [2025-03-03] docs: add note about experiment — 2025-03-03
+
+- [2025-03-04] docs: add note about experiment — 2025-03-04
