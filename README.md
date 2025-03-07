@@ -650,3 +650,5 @@ Git workflow to reconcile your branch with main
 - [2025-03-04] docs: add note about experiment — 2025-03-04
 
 - [2025-03-05] chore: refresh examples — 2025-03-05
+
+- [2025-03-07] docs: add note about experiment — 2025-03-07
