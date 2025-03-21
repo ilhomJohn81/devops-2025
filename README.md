@@ -674,3 +674,5 @@ Git workflow to reconcile your branch with main
 - [2025-03-19] fix: small typo in docs — 2025-03-19
 
 - [2025-03-20] chore: refresh examples — 2025-03-20
+
+- [2025-03-21] chore: refresh examples — 2025-03-21
