@@ -752,3 +752,5 @@ Git workflow to reconcile your branch with main
 - [2025-05-01] chore(docs): update README — 2025-05-01
 
 - [2025-05-02] chore: refresh examples — 2025-05-02
+
+- [2025-05-02] docs: add note about experiment — 2025-05-02
