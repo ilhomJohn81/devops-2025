@@ -784,3 +784,5 @@ Git workflow to reconcile your branch with main
 - [2025-05-20] style: reformat README section — 2025-05-20
 
 - [2025-05-22] fix: small typo in docs — 2025-05-22
+
+- [2025-05-22] docs: add note about experiment — 2025-05-22
