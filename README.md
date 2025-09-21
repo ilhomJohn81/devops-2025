@@ -11,4 +11,5 @@ Denys here
 it's me, Natalia
 it's me Saniya 
 Hello group!
->>>>>>> refs/remotes/origin/main
+Denys here
+Here was Sveta
