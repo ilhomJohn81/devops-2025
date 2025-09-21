@@ -3,4 +3,4 @@
 Тут был Виктор.
 Tyt bila Anya.
 Тут был Миша
-it's me
+it's me, Natalia
