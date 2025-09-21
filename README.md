@@ -5,9 +5,7 @@ Tyt bila Anya.
 <<<<<<< HEAD
 Тут был Миша.
 Denys here
-=======
 Тут был Миша
 it's me, Natalia
 it's me Saniya 
 Hello group!
->>>>>>> refs/remotes/origin/main
