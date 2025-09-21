@@ -2,5 +2,12 @@
 
 Тут был Виктор.
 Tyt bila Anya.
+<<<<<<< HEAD
 Тут был Миша.
-Ilhom was here.
+Denys here
+=======
+Тут был Миша
+it's me, Natalia
+it's me Saniya 
+Hello group!
+>>>>>>> refs/remotes/origin/main
