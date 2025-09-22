@@ -13,3 +13,4 @@ it's me Saniya
 Hello group!
 Denys here
 Here was Sveta
+Тут был Влад.
