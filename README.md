@@ -17,3 +17,4 @@ Here was Sveta
 vlad
 Тут была Анжела.
 Tut byl Aleksey
+Тест PUSH from PyCharm
