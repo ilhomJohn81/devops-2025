@@ -17,5 +17,5 @@ Here was Sveta
 vlad
 Тут была Анжела.
 Tut byl Aleksey
-Тест PUSH from PyCharm
-Test for Annas updates
+Nick was here
+Тут была Евгения.
