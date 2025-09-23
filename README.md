@@ -18,4 +18,4 @@ vlad
 Тут была Анжела.
 Tut byl Aleksey
 Nick was here
-Тут была Евгения
+Тут была Евгения.
