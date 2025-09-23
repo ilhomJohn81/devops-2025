@@ -20,3 +20,4 @@ Nick was here
 Я сделаю
 I was here (Aysel).
 I was here… Git blame can confirm.
+Eleonora was here.
