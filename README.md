@@ -1,6 +1,6 @@
 # devops-2025
 
-Тут был Виктор. - task-11..!
+Тут был Виктор. - task-11..
 Tyt bila Anya.
 Ilhom was here.
 Тут был Миша.
@@ -16,5 +16,4 @@ vlad
 Тут была Анжела.
 Tut byl Aleksey
 Nick was here
-Тут была Евгения.
-Я сделаю
+Тут была Евгения. Добавила в ветку task-11
