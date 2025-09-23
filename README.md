@@ -19,3 +19,4 @@ Nick was here
 Тут была Евгения. Task added to commit
 Я сделаю
 I was here (Aysel).
+I was here… Git blame can confirm.
