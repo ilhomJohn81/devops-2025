@@ -1,6 +1,6 @@
 # devops-2025
 
-Тут был Виктор.
+Тут был Виктор. - task-11..
 Tyt bila Anya.
 Ilhom was here.
 Тут был Миша.
