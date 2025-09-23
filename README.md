@@ -2,17 +2,17 @@
 
 Тут был Виктор. - task-11..
 Tyt bila Anya.
-Ilhom was here.
-Тут был Миша.
-Denys here
-Тут был Миша
+Ilhom was here.!!
+Тут был Миша.!!
+Denys here!!
+Тут был Миша1
 Alex was here.
 it's me, Natalia
-it's me Saniya 
+it's me Saniya !
 Hello group!
 Denys here!
 Here was Sveta
-Тут был Влад.
+Тут был Влад.!
 vlad
 Тут была Анжела.
 Tut byl Aleksey
