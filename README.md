@@ -3,8 +3,10 @@
 Тут был Виктор. - task-11..
 Tyt bila Anya.
 Ilhom was here.
+<<<<<<< HEAD
 Тут был Миша.
 Denys here
+=======
 Тут был Миша
 it's me, Natalia
 it's me Saniya 
@@ -17,3 +19,4 @@ vlad
 Tut byl Aleksey
 Nick was here
 Тут была Евгения.
+Я сделаю
