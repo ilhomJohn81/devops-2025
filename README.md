@@ -6,6 +6,7 @@ Ilhom was here.
 Тут был Миша.
 Denys here
 Тут был Миша
+Alex was here
 it's me, Natalia
 it's me Saniya 
 Hello group!
