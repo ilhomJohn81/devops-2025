@@ -18,3 +18,4 @@ vlad
 Тут была Анжела.
 Tut byl Aleksey
 Тест PUSH from PyCharm
+Test for Annas updates
