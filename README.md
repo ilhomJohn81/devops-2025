@@ -3,14 +3,15 @@
 Тут был Виктор. - task-11..
 Tyt bila Anya.
 Ilhom was here.
+<<<<<<< HEAD
 Тут был Миша.
 Denys here
+=======
 Тут был Миша
-Alex was here.
 it's me, Natalia
 it's me Saniya 
 Hello group!
-Denys here!
+Denys here
 Here was Sveta
 Тут был Влад.
 vlad
