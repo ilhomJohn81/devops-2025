@@ -5,7 +5,7 @@ Tyt bila Anya.
 Ilhom was here.
 Тут был Миша.
 Denys here
-=======
+Alex was here
 Тут был Миша
 it's me, Natalia
 it's me Saniya 
