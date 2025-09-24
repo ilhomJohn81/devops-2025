@@ -3,15 +3,11 @@
 Тут был Виктор. - task-11..
 Tyt bila Anya.
 Ilhom was here.
+<<<<<<< HEAD
 Тут был Миша.
 Denys here
+=======
 Тут был Миша
-Alex was here.
-Ilhom was here.!!
-Тут был Миша.!!
-Denys here!!
-Тут был Миша1
-Alex was here.
 it's me, Natalia
 it's me Saniya 
 Hello group!
@@ -22,10 +18,4 @@ vlad
 Тут была Анжела.
 Tut byl Aleksey
 Nick was here
-Тут была Евгения. Task added to commit
-Я сделаю
-I was here (Aysel).
-I was here… Git blame can confirm.
-Eleonora was here.
-Andrii Gladkyi was here.
-Push error+
+Тут была Евгения. Добавила в ветку task-11
