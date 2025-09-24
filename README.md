@@ -15,7 +15,7 @@ Here was Sveta
 Тут был Влад.!
 vlad
 Тут была Анжела.
-Tut byl Aleksey
+Tut byl Aleksey+
 Nick was here
 Тут была Евгения. Task added to commit
 Я сделаю
