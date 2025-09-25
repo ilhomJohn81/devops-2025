@@ -17,8 +17,14 @@ vlad
 Тут была Анжела.
 Tut byl Aleksey - kramar-task-2.
 Nick was here
+Тут была Евгения. Task added to commit
+Я сделаю
+Aeksandr was here
 Тут была Евгения. Добавила в ветку task-11
 Тут был Мейрам. Хоть и поздно может никто и не увидит но был ))
+abdullin-task-2
 Here was ILDAR
-
-
+tut bila Marina task-11
+tut bila Marina 
+Aleksandr
+Eleonora was here
