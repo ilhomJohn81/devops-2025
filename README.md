@@ -5,17 +5,21 @@ Tyt bila Anya.
 Ilhom was here.
 Тут был Миша.
 Denys here
+Alex was here
 Тут был Миша
 it's me, Natalia
 it's me Saniya 
 Hello group!
-Denys here!
+Denys here
 Here was Sveta
 Тут был Влад.
 vlad
 Тут была Анжела.
-Tut byl Aleksey
+Tut byl Aleksey - kramar-task-2.
 Nick was here
 Тут была Евгения. Task added to commit
 Я сделаю
 Aeksandr was visited
+Тут была Евгения. Добавила в ветку task-11
+Тут был Мейрам. Хоть и поздно может никто и не увидит но был ))
+tut bila Marina 
