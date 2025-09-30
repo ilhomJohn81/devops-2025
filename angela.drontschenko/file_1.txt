@@ -1,6 +1,0 @@
-Git learning
-
-https://learngitbranching.js.org/
-https://ohmygit.org/
-
-https://girliemac.com/blog/2017/12/26/git-purr/
