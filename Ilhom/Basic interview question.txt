@@ -15,3 +15,5 @@ applying changes, helping you understand what Terraform will do.
 dependencies, optimizing resource creation and modification.
  Change Automation: Automates complex changesets to
 your infrastructure with minimal human interaction.
+
+2+2*2=6
