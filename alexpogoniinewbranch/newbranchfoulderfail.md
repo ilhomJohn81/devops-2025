@@ -1,4 +1,4 @@
-# Poverka statusa: git status
+# Poverka statusa: git status !
 * Dobaviti izmenenia: git add
 * Dobaviti toliko odin fail: git add index.js
 * Sdelati commit: git commit -m
