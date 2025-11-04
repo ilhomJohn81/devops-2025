@@ -1,804 +1,92 @@
-###
-For CLI (command line interface)
-Git workflow to reconcile your branch with main
+# 🚀 DevOps 2025 — Practical Infrastructure Automation Lab
 
-1. `git checkout main`
-   1.1 `git rebase`
-   1.2 `git pull`
-2. `git pull`
-3. `git checkout your/branch`
-4. `git rebase main (conflicts possible)`
-5. after you finish
-   `git push --force`
+Welcome to **DevOps 2025**, a hands-on environment for practicing real-world DevOps workflows, automation, and CI/CD pipeline design.  
+This repository showcases examples of how to build, configure, and deploy modern cloud-native infrastructure using industry-standard tools.
 
-- [2024-01-01] fix: small typo in docs — 2024-01-01
+---
 
-- [2024-01-01] chore: refresh examples — 2024-01-01
+## 🧰 Tech Stack
 
-- [2024-01-02] chore: refresh examples — 2024-01-02
+| Tool | Purpose |
+|------|----------|
+| **Terraform** | Infrastructure as Code (IaC) — provisioning AWS EC2, networking, and K3s clusters |
+| **Ansible** | Configuration management and server automation |
+| **Docker / Docker Compose** | Containerization and local environment setup |
+| **K3s (Lightweight Kubernetes)** | Orchestration for containerized workloads |
+| **Helm** | Application deployment management |
+| **Jenkins** | Continuous Integration / Continuous Deployment (CI/CD) |
+| **GitHub Actions** | Optional lightweight CI/CD for testing automation |
+| **Prometheus / Grafana** | Monitoring and observability setup |
 
-- [2024-01-03] style: reformat README section — 2024-01-03
+---
 
-- [2024-01-03] chore: refresh examples — 2024-01-03
+## 🧱 Project Structure
 
-- [2024-01-04] docs: add note about experiment — 2024-01-04
+devops-2025/
+├── ansible/
+├── terraform/
+├── jenkins/
+├── k3s/
+├── docker/
+├── scripts/
+└── README.md
 
-- [2024-01-04] chore: refresh examples — 2024-01-04
 
-- [2024-01-08] style: reformat README section — 2024-01-08
+---
 
-- [2024-01-11] docs: add note about experiment — 2024-01-11
+## 🧪 Usage
 
-- [2024-01-11] fix: small typo in docs — 2024-01-11
+### 1️⃣ Clone the repository
+```bash
+git clone git@github.com:ilhomJohn81/devops-2025.git
+cd devops-2025
+2️⃣ Initialize Terraform
+cd terraform
+terraform init
+terraform apply -auto-approve
 
-- [2024-01-19] chore(docs): update README — 2024-01-19
+3️⃣ Configure with Ansible
+cd ../ansible
+ansible-playbook site.yml -i inventory/aws.ini
 
-- [2024-01-23] fix: small typo in docs — 2024-01-23
+4️⃣ Deploy workloads to K3s
+cd ../k3s
+helm install demo ./chart
 
-- [2024-01-25] fix: small typo in docs — 2024-01-25
+🧩 Jenkins Pipeline Example
+pipeline {
+  agent any
+  stages {
+    stage('Build') {
+      steps {
+        sh 'docker build -t devops2025-app .'
+      }
+    }
+    stage('Deploy') {
+      steps {
+        sh 'ansible-playbook playbooks/deploy.yml'
+      }
+    }
+  }
+}
 
-- [2024-01-30] docs: add note about experiment — 2024-01-30
+📊 Observability
 
-- [2024-01-31] docs: add note about experiment — 2024-01-31
+The project integrates Prometheus + Grafana to monitor system metrics and visualize CI/CD efficiency.
 
-- [2024-01-31] style: reformat README section — 2024-01-31
+🧠 Learning Goals
 
-- [2024-02-01] fix: small typo in docs — 2024-02-01
+Practice Infrastructure as Code (IaC) with Terraform
 
-- [2024-02-05] docs: add note about experiment — 2024-02-05
+Automate configuration management using Ansible
 
-- [2024-02-05] chore(docs): update README — 2024-02-05
+Build and deploy workloads using Kubernetes / K3s
 
-- [2024-02-06] style: reformat README section — 2024-02-06
+Understand CI/CD principles using Jenkins pipelines
 
-- [2024-02-06] docs: add note about experiment — 2024-02-06
+Learn how to monitor and secure DevOps environments
 
-- [2024-02-07] chore(docs): update README — 2024-02-07
+👨‍💻 Author
 
-- [2024-02-09] docs: add note about experiment — 2024-02-09
-
-- [2024-02-12] docs: add note about experiment — 2024-02-12
-
-- [2024-02-14] style: reformat README section — 2024-02-14
-
-- [2024-02-15] docs: add note about experiment — 2024-02-15
-
-- [2024-02-19] chore(docs): update README — 2024-02-19
-
-- [2024-02-20] chore: refresh examples — 2024-02-20
-
-- [2024-02-21] chore: refresh examples — 2024-02-21
-
-- [2024-02-22] style: reformat README section — 2024-02-22
-
-- [2024-02-26] chore: refresh examples — 2024-02-26
-
-- [2024-02-27] chore(docs): update README — 2024-02-27
-
-- [2024-02-28] docs: add note about experiment — 2024-02-28
-
-- [2024-02-29] chore: refresh examples — 2024-02-29
-
-- [2024-02-29] chore: refresh examples — 2024-02-29
-
-- [2024-03-01] style: reformat README section — 2024-03-01
-
-- [2024-03-01] chore(docs): update README — 2024-03-01
-
-- [2024-03-04] fix: small typo in docs — 2024-03-04
-
-- [2024-03-04] docs: add note about experiment — 2024-03-04
-
-- [2024-03-05] chore(docs): update README — 2024-03-05
-
-- [2024-03-06] chore(docs): update README — 2024-03-06
-
-- [2024-03-07] chore(docs): update README — 2024-03-07
-
-- [2024-03-11] chore: refresh examples — 2024-03-11
-
-- [2024-03-13] chore(docs): update README — 2024-03-13
-
-- [2024-03-14] fix: small typo in docs — 2024-03-14
-
-- [2024-03-14] chore(docs): update README — 2024-03-14
-
-- [2024-03-15] docs: add note about experiment — 2024-03-15
-
-- [2024-03-19] chore(docs): update README — 2024-03-19
-
-- [2024-03-19] chore(docs): update README — 2024-03-19
-
-- [2024-03-20] chore(docs): update README — 2024-03-20
-
-- [2024-03-21] chore(docs): update README — 2024-03-21
-
-- [2024-03-22] chore(docs): update README — 2024-03-22
-
-- [2024-03-22] fix: small typo in docs — 2024-03-22
-
-- [2024-03-25] chore(docs): update README — 2024-03-25
-
-- [2024-03-26] chore: refresh examples — 2024-03-26
-
-- [2024-03-26] chore(docs): update README — 2024-03-26
-
-- [2024-03-27] chore(docs): update README — 2024-03-27
-
-- [2024-03-28] docs: add note about experiment — 2024-03-28
-
-- [2024-04-01] chore: refresh examples — 2024-04-01
-
-- [2024-04-01] style: reformat README section — 2024-04-01
-
-- [2024-04-03] fix: small typo in docs — 2024-04-03
-
-- [2024-04-04] style: reformat README section — 2024-04-04
-
-- [2024-04-04] style: reformat README section — 2024-04-04
-
-- [2024-04-05] style: reformat README section — 2024-04-05
-
-- [2024-04-08] chore(docs): update README — 2024-04-08
-
-- [2024-04-11] style: reformat README section — 2024-04-11
-
-- [2024-04-11] style: reformat README section — 2024-04-11
-
-- [2024-04-15] docs: add note about experiment — 2024-04-15
-
-- [2024-04-15] fix: small typo in docs — 2024-04-15
-
-- [2024-04-17] style: reformat README section — 2024-04-17
-
-- [2024-04-18] docs: add note about experiment — 2024-04-18
-
-- [2024-04-22] fix: small typo in docs — 2024-04-22
-
-- [2024-04-23] docs: add note about experiment — 2024-04-23
-
-- [2024-04-23] chore(docs): update README — 2024-04-23
-
-- [2024-04-24] style: reformat README section — 2024-04-24
-
-- [2024-04-29] docs: add note about experiment — 2024-04-29
-
-- [2024-04-29] fix: small typo in docs — 2024-04-29
-
-- [2024-04-30] fix: small typo in docs — 2024-04-30
-
-- [2024-04-30] chore: refresh examples — 2024-04-30
-
-- [2024-05-02] fix: small typo in docs — 2024-05-02
-
-- [2024-05-02] docs: add note about experiment — 2024-05-02
-
-- [2024-05-06] fix: small typo in docs — 2024-05-06
-
-- [2024-05-09] chore: refresh examples — 2024-05-09
-
-- [2024-05-15] docs: add note about experiment — 2024-05-15
-
-- [2024-05-15] fix: small typo in docs — 2024-05-15
-
-- [2024-05-20] docs: add note about experiment — 2024-05-20
-
-- [2024-05-20] chore: refresh examples — 2024-05-20
-
-- [2024-05-22] style: reformat README section — 2024-05-22
-
-- [2024-05-22] chore: refresh examples — 2024-05-22
-
-- [2024-05-27] chore: refresh examples — 2024-05-27
-
-- [2024-05-28] chore(docs): update README — 2024-05-28
-
-- [2024-05-29] chore(docs): update README — 2024-05-29
-
-- [2024-06-03] chore(docs): update README — 2024-06-03
-
-- [2024-06-04] fix: small typo in docs — 2024-06-04
-
-- [2024-06-05] fix: small typo in docs — 2024-06-05
-
-- [2024-06-05] docs: add note about experiment — 2024-06-05
-
-- [2024-06-06] docs: add note about experiment — 2024-06-06
-
-- [2024-06-06] chore: refresh examples — 2024-06-06
-
-- [2024-06-07] style: reformat README section — 2024-06-07
-
-- [2024-06-07] chore: refresh examples — 2024-06-07
-
-- [2024-06-11] chore(docs): update README — 2024-06-11
-
-- [2024-06-11] style: reformat README section — 2024-06-11
-
-- [2024-06-12] chore(docs): update README — 2024-06-12
-
-- [2024-06-13] chore(docs): update README — 2024-06-13
-
-- [2024-06-13] fix: small typo in docs — 2024-06-13
-
-- [2024-06-14] chore: refresh examples — 2024-06-14
-
-- [2024-06-14] style: reformat README section — 2024-06-14
-
-- [2024-06-20] chore: refresh examples — 2024-06-20
-
-- [2024-06-24] fix: small typo in docs — 2024-06-24
-
-- [2024-06-24] docs: add note about experiment — 2024-06-24
-
-- [2024-06-25] chore(docs): update README — 2024-06-25
-
-- [2024-06-25] style: reformat README section — 2024-06-25
-
-- [2024-06-26] fix: small typo in docs — 2024-06-26
-
-- [2024-06-27] style: reformat README section — 2024-06-27
-
-- [2024-06-27] docs: add note about experiment — 2024-06-27
-
-- [2024-07-01] style: reformat README section — 2024-07-01
-
-- [2024-07-01] style: reformat README section — 2024-07-01
-
-- [2024-07-02] style: reformat README section — 2024-07-02
-
-- [2024-07-03] fix: small typo in docs — 2024-07-03
-
-- [2024-07-03] style: reformat README section — 2024-07-03
-
-- [2024-07-04] docs: add note about experiment — 2024-07-04
-
-- [2024-07-09] chore: refresh examples — 2024-07-09
-
-- [2024-07-09] chore: refresh examples — 2024-07-09
-
-- [2024-07-10] style: reformat README section — 2024-07-10
-
-- [2024-07-10] chore: refresh examples — 2024-07-10
-
-- [2024-07-15] docs: add note about experiment — 2024-07-15
-
-- [2024-07-15] chore(docs): update README — 2024-07-15
-
-- [2024-07-17] fix: small typo in docs — 2024-07-17
-
-- [2024-07-17] fix: small typo in docs — 2024-07-17
-
-- [2024-07-18] style: reformat README section — 2024-07-18
-
-- [2024-07-19] style: reformat README section — 2024-07-19
-
-- [2024-07-22] chore(docs): update README — 2024-07-22
-
-- [2024-07-23] docs: add note about experiment — 2024-07-23
-
-- [2024-07-23] style: reformat README section — 2024-07-23
-
-- [2024-07-26] fix: small typo in docs — 2024-07-26
-
-- [2024-07-29] style: reformat README section — 2024-07-29
-
-- [2024-07-30] docs: add note about experiment — 2024-07-30
-
-- [2024-07-30] chore(docs): update README — 2024-07-30
-
-- [2024-07-31] style: reformat README section — 2024-07-31
-
-- [2024-07-31] docs: add note about experiment — 2024-07-31
-
-- [2024-08-01] docs: add note about experiment — 2024-08-01
-
-- [2024-08-02] chore(docs): update README — 2024-08-02
-
-- [2024-08-06] chore: refresh examples — 2024-08-06
-
-- [2024-08-06] fix: small typo in docs — 2024-08-06
-
-- [2024-08-07] docs: add note about experiment — 2024-08-07
-
-- [2024-08-08] fix: small typo in docs — 2024-08-08
-
-- [2024-08-08] docs: add note about experiment — 2024-08-08
-
-- [2024-08-09] chore: refresh examples — 2024-08-09
-
-- [2024-08-09] docs: add note about experiment — 2024-08-09
-
-- [2024-08-13] docs: add note about experiment — 2024-08-13
-
-- [2024-08-14] style: reformat README section — 2024-08-14
-
-- [2024-08-14] docs: add note about experiment — 2024-08-14
-
-- [2024-08-15] fix: small typo in docs — 2024-08-15
-
-- [2024-08-15] chore(docs): update README — 2024-08-15
-
-- [2024-08-16] chore(docs): update README — 2024-08-16
-
-- [2024-08-19] chore(docs): update README — 2024-08-19
-
-- [2024-08-19] fix: small typo in docs — 2024-08-19
-
-- [2024-08-21] docs: add note about experiment — 2024-08-21
-
-- [2024-08-22] chore: refresh examples — 2024-08-22
-
-- [2024-08-23] chore: refresh examples — 2024-08-23
-
-- [2024-08-26] style: reformat README section — 2024-08-26
-
-- [2024-08-28] chore: refresh examples — 2024-08-28
-
-- [2024-08-28] chore(docs): update README — 2024-08-28
-
-- [2024-08-29] style: reformat README section — 2024-08-29
-
-- [2024-09-02] fix: small typo in docs — 2024-09-02
-
-- [2024-09-02] style: reformat README section — 2024-09-02
-
-- [2024-09-03] chore: refresh examples — 2024-09-03
-
-- [2024-09-03] chore(docs): update README — 2024-09-03
-
-- [2024-09-05] docs: add note about experiment — 2024-09-05
-
-- [2024-09-06] fix: small typo in docs — 2024-09-06
-
-- [2024-09-06] fix: small typo in docs — 2024-09-06
-
-- [2024-09-10] chore: refresh examples — 2024-09-10
-
-- [2024-09-10] style: reformat README section — 2024-09-10
-
-- [2024-09-11] fix: small typo in docs — 2024-09-11
-
-- [2024-09-11] style: reformat README section — 2024-09-11
-
-- [2024-09-13] chore: refresh examples — 2024-09-13
-
-- [2024-09-13] docs: add note about experiment — 2024-09-13
-
-- [2024-09-16] chore(docs): update README — 2024-09-16
-
-- [2024-09-17] chore: refresh examples — 2024-09-17
-
-- [2024-09-17] chore(docs): update README — 2024-09-17
-
-- [2024-09-18] docs: add note about experiment — 2024-09-18
-
-- [2024-09-19] fix: small typo in docs — 2024-09-19
-
-- [2024-09-19] style: reformat README section — 2024-09-19
-
-- [2024-09-23] chore: refresh examples — 2024-09-23
-
-- [2024-09-23] fix: small typo in docs — 2024-09-23
-
-- [2024-09-24] chore(docs): update README — 2024-09-24
-
-- [2024-09-24] docs: add note about experiment — 2024-09-24
-
-- [2024-09-27] chore: refresh examples — 2024-09-27
-
-- [2024-09-27] style: reformat README section — 2024-09-27
-
-- [2024-10-01] chore(docs): update README — 2024-10-01
-
-- [2024-10-01] docs: add note about experiment — 2024-10-01
-
-- [2024-10-02] docs: add note about experiment — 2024-10-02
-
-- [2024-10-04] fix: small typo in docs — 2024-10-04
-
-- [2024-10-04] docs: add note about experiment — 2024-10-04
-
-- [2024-10-07] chore: refresh examples — 2024-10-07
-
-- [2024-10-08] style: reformat README section — 2024-10-08
-
-- [2024-10-08] chore: refresh examples — 2024-10-08
-
-- [2024-10-09] docs: add note about experiment — 2024-10-09
-
-- [2024-10-11] docs: add note about experiment — 2024-10-11
-
-- [2024-10-14] chore: refresh examples — 2024-10-14
-
-- [2024-10-17] fix: small typo in docs — 2024-10-17
-
-- [2024-10-17] chore: refresh examples — 2024-10-17
-
-- [2024-10-18] fix: small typo in docs — 2024-10-18
-
-- [2024-10-21] chore(docs): update README — 2024-10-21
-
-- [2024-10-22] chore: refresh examples — 2024-10-22
-
-- [2024-10-22] chore(docs): update README — 2024-10-22
-
-- [2024-10-23] docs: add note about experiment — 2024-10-23
-
-- [2024-10-24] fix: small typo in docs — 2024-10-24
-
-- [2024-10-28] docs: add note about experiment — 2024-10-28
-
-- [2024-10-28] style: reformat README section — 2024-10-28
-
-- [2024-10-29] chore: refresh examples — 2024-10-29
-
-- [2024-10-29] fix: small typo in docs — 2024-10-29
-
-- [2024-10-30] fix: small typo in docs — 2024-10-30
-
-- [2024-11-01] chore: refresh examples — 2024-11-01
-
-- [2024-11-04] chore: refresh examples — 2024-11-04
-
-- [2024-11-05] fix: small typo in docs — 2024-11-05
-
-- [2024-11-06] chore(docs): update README — 2024-11-06
-
-- [2024-11-06] docs: add note about experiment — 2024-11-06
-
-- [2024-11-07] docs: add note about experiment — 2024-11-07
-
-- [2024-11-07] style: reformat README section — 2024-11-07
-
-- [2024-11-08] chore(docs): update README — 2024-11-08
-
-- [2024-11-11] docs: add note about experiment — 2024-11-11
-
-- [2024-11-11] fix: small typo in docs — 2024-11-11
-
-- [2024-11-12] docs: add note about experiment — 2024-11-12
-
-- [2024-11-12] chore(docs): update README — 2024-11-12
-
-- [2024-11-13] fix: small typo in docs — 2024-11-13
-
-- [2024-11-13] style: reformat README section — 2024-11-13
-
-- [2024-11-14] fix: small typo in docs — 2024-11-14
-
-- [2024-11-15] chore: refresh examples — 2024-11-15
-
-- [2024-11-15] style: reformat README section — 2024-11-15
-
-- [2024-11-18] fix: small typo in docs — 2024-11-18
-
-- [2024-11-18] fix: small typo in docs — 2024-11-18
-
-- [2024-11-21] fix: small typo in docs — 2024-11-21
-
-- [2024-11-22] fix: small typo in docs — 2024-11-22
-
-- [2024-11-27] docs: add note about experiment — 2024-11-27
-
-- [2024-11-27] chore: refresh examples — 2024-11-27
-
-- [2024-11-28] chore(docs): update README — 2024-11-28
-
-- [2024-11-29] chore: refresh examples — 2024-11-29
-
-- [2024-12-02] fix: small typo in docs — 2024-12-02
-
-- [2024-12-02] chore(docs): update README — 2024-12-02
-
-- [2024-12-04] chore(docs): update README — 2024-12-04
-
-- [2024-12-04] chore(docs): update README — 2024-12-04
-
-- [2024-12-06] fix: small typo in docs — 2024-12-06
-
-- [2024-12-06] docs: add note about experiment — 2024-12-06
-
-- [2024-12-10] chore: refresh examples — 2024-12-10
-
-- [2024-12-11] fix: small typo in docs — 2024-12-11
-
-- [2024-12-12] docs: add note about experiment — 2024-12-12
-
-- [2024-12-13] fix: small typo in docs — 2024-12-13
-
-- [2024-12-16] fix: small typo in docs — 2024-12-16
-
-- [2024-12-16] style: reformat README section — 2024-12-16
-
-- [2024-12-17] chore(docs): update README — 2024-12-17
-
-- [2024-12-17] docs: add note about experiment — 2024-12-17
-
-- [2024-12-18] chore(docs): update README — 2024-12-18
-
-- [2024-12-18] chore: refresh examples — 2024-12-18
-
-- [2024-12-19] chore(docs): update README — 2024-12-19
-
-- [2024-12-20] chore: refresh examples — 2024-12-20
-
-- [2024-12-23] docs: add note about experiment — 2024-12-23
-
-- [2024-12-23] fix: small typo in docs — 2024-12-23
-
-- [2024-12-24] fix: small typo in docs — 2024-12-24
-
-- [2024-12-25] fix: small typo in docs — 2024-12-25
-
-- [2024-12-26] fix: small typo in docs — 2024-12-26
-
-- [2024-12-26] style: reformat README section — 2024-12-26
-
-- [2024-12-30] style: reformat README section — 2024-12-30
-
-- [2024-12-30] chore(docs): update README — 2024-12-30
-
-- [2024-12-31] chore(docs): update README — 2024-12-31
-
-- [2025-01-01] fix: small typo in docs — 2025-01-01
-
-- [2025-01-01] docs: add note about experiment — 2025-01-01
-
-- [2025-01-02] fix: small typo in docs — 2025-01-02
-
-- [2025-01-03] fix: small typo in docs — 2025-01-03
-
-- [2025-01-08] docs: add note about experiment — 2025-01-08
-
-- [2025-01-08] fix: small typo in docs — 2025-01-08
-
-- [2025-01-09] style: reformat README section — 2025-01-09
-
-- [2025-01-09] fix: small typo in docs — 2025-01-09
-
-- [2025-01-10] chore: refresh examples — 2025-01-10
-
-- [2025-01-13] chore(docs): update README — 2025-01-13
-
-- [2025-01-13] fix: small typo in docs — 2025-01-13
-
-- [2025-01-15] docs: add note about experiment — 2025-01-15
-
-- [2025-01-15] docs: add note about experiment — 2025-01-15
-
-- [2025-01-16] chore: refresh examples — 2025-01-16
-
-- [2025-01-17] fix: small typo in docs — 2025-01-17
-
-- [2025-01-20] chore(docs): update README — 2025-01-20
-
-- [2025-01-20] docs: add note about experiment — 2025-01-20
-
-- [2025-01-21] docs: add note about experiment — 2025-01-21
-
-- [2025-01-21] style: reformat README section — 2025-01-21
-
-- [2025-01-22] chore(docs): update README — 2025-01-22
-
-- [2025-01-23] chore(docs): update README — 2025-01-23
-
-- [2025-01-24] chore(docs): update README — 2025-01-24
-
-- [2025-01-24] fix: small typo in docs — 2025-01-24
-
-- [2025-01-27] chore: refresh examples — 2025-01-27
-
-- [2025-01-28] style: reformat README section — 2025-01-28
-
-- [2025-01-30] style: reformat README section — 2025-01-30
-
-- [2025-01-30] style: reformat README section — 2025-01-30
-
-- [2025-02-03] fix: small typo in docs — 2025-02-03
-
-- [2025-02-03] chore(docs): update README — 2025-02-03
-
-- [2025-02-04] style: reformat README section — 2025-02-04
-
-- [2025-02-04] chore: refresh examples — 2025-02-04
-
-- [2025-02-05] style: reformat README section — 2025-02-05
-
-- [2025-02-05] chore: refresh examples — 2025-02-05
-
-- [2025-02-06] chore: refresh examples — 2025-02-06
-
-- [2025-02-06] fix: small typo in docs — 2025-02-06
-
-- [2025-02-07] fix: small typo in docs — 2025-02-07
-
-- [2025-02-11] docs: add note about experiment — 2025-02-11
-
-- [2025-02-11] fix: small typo in docs — 2025-02-11
-
-- [2025-02-12] chore: refresh examples — 2025-02-12
-
-- [2025-02-17] fix: small typo in docs — 2025-02-17
-
-- [2025-02-19] style: reformat README section — 2025-02-19
-
-- [2025-02-19] fix: small typo in docs — 2025-02-19
-
-- [2025-02-20] fix: small typo in docs — 2025-02-20
-
-- [2025-02-21] chore(docs): update README — 2025-02-21
-
-- [2025-02-21] chore(docs): update README — 2025-02-21
-
-- [2025-02-24] chore: refresh examples — 2025-02-24
-
-- [2025-02-25] chore(docs): update README — 2025-02-25
-
-- [2025-02-26] docs: add note about experiment — 2025-02-26
-
-- [2025-02-26] docs: add note about experiment — 2025-02-26
-
-- [2025-02-27] chore(docs): update README — 2025-02-27
-
-- [2025-02-28] docs: add note about experiment — 2025-02-28
-
-- [2025-03-03] style: reformat README section — 2025-03-03
-
-- [2025-03-03] docs: add note about experiment — 2025-03-03
-
-- [2025-03-04] docs: add note about experiment — 2025-03-04
-
-- [2025-03-05] chore: refresh examples — 2025-03-05
-
-- [2025-03-07] docs: add note about experiment — 2025-03-07
-
-- [2025-03-10] docs: add note about experiment — 2025-03-10
-
-- [2025-03-10] chore(docs): update README — 2025-03-10
-
-- [2025-03-13] chore: refresh examples — 2025-03-13
-
-- [2025-03-13] fix: small typo in docs — 2025-03-13
-
-- [2025-03-14] fix: small typo in docs — 2025-03-14
-
-- [2025-03-14] fix: small typo in docs — 2025-03-14
-
-- [2025-03-17] fix: small typo in docs — 2025-03-17
-
-- [2025-03-17] chore: refresh examples — 2025-03-17
-
-- [2025-03-18] style: reformat README section — 2025-03-18
-
-- [2025-03-19] fix: small typo in docs — 2025-03-19
-
-- [2025-03-20] chore: refresh examples — 2025-03-20
-
-- [2025-03-21] chore: refresh examples — 2025-03-21
-
-- [2025-03-21] fix: small typo in docs — 2025-03-21
-
-- [2025-03-24] style: reformat README section — 2025-03-24
-
-- [2025-03-24] docs: add note about experiment — 2025-03-24
-
-- [2025-03-25] docs: add note about experiment — 2025-03-25
-
-- [2025-03-26] style: reformat README section — 2025-03-26
-
-- [2025-03-27] chore: refresh examples — 2025-03-27
-
-- [2025-03-28] chore: refresh examples — 2025-03-28
-
-- [2025-03-28] style: reformat README section — 2025-03-28
-
-- [2025-03-31] chore: refresh examples — 2025-03-31
-
-- [2025-04-01] chore: refresh examples — 2025-04-01
-
-- [2025-04-02] docs: add note about experiment — 2025-04-02
-
-- [2025-04-02] style: reformat README section — 2025-04-02
-
-- [2025-04-08] style: reformat README section — 2025-04-08
-
-- [2025-04-08] style: reformat README section — 2025-04-08
-
-- [2025-04-09] fix: small typo in docs — 2025-04-09
-
-- [2025-04-10] chore: refresh examples — 2025-04-10
-
-- [2025-04-10] chore(docs): update README — 2025-04-10
-
-- [2025-04-11] docs: add note about experiment — 2025-04-11
-
-- [2025-04-11] chore(docs): update README — 2025-04-11
-
-- [2025-04-14] style: reformat README section — 2025-04-14
-
-- [2025-04-15] style: reformat README section — 2025-04-15
-
-- [2025-04-15] chore: refresh examples — 2025-04-15
-
-- [2025-04-16] chore(docs): update README — 2025-04-16
-
-- [2025-04-17] chore(docs): update README — 2025-04-17
-
-- [2025-04-17] chore(docs): update README — 2025-04-17
-
-- [2025-04-18] docs: add note about experiment — 2025-04-18
-
-- [2025-04-18] fix: small typo in docs — 2025-04-18
-
-- [2025-04-21] fix: small typo in docs — 2025-04-21
-
-- [2025-04-21] style: reformat README section — 2025-04-21
-
-- [2025-04-22] style: reformat README section — 2025-04-22
-
-- [2025-04-22] chore(docs): update README — 2025-04-22
-
-- [2025-04-24] chore(docs): update README — 2025-04-24
-
-- [2025-04-25] docs: add note about experiment — 2025-04-25
-
-- [2025-04-28] docs: add note about experiment — 2025-04-28
-
-- [2025-04-30] style: reformat README section — 2025-04-30
-
-- [2025-04-30] fix: small typo in docs — 2025-04-30
-
-- [2025-05-01] chore(docs): update README — 2025-05-01
-
-- [2025-05-02] chore: refresh examples — 2025-05-02
-
-- [2025-05-02] docs: add note about experiment — 2025-05-02
-
-- [2025-05-06] chore: refresh examples — 2025-05-06
-
-- [2025-05-08] docs: add note about experiment — 2025-05-08
-
-- [2025-05-09] docs: add note about experiment — 2025-05-09
-
-- [2025-05-09] style: reformat README section — 2025-05-09
-
-- [2025-05-12] docs: add note about experiment — 2025-05-12
-
-- [2025-05-13] style: reformat README section — 2025-05-13
-
-- [2025-05-15] chore: refresh examples — 2025-05-15
-
-- [2025-05-15] style: reformat README section — 2025-05-15
-
-- [2025-05-16] style: reformat README section — 2025-05-16
-
-- [2025-05-16] style: reformat README section — 2025-05-16
-
-- [2025-05-19] style: reformat README section — 2025-05-19
-
-- [2025-05-19] style: reformat README section — 2025-05-19
-
-- [2025-05-20] fix: small typo in docs — 2025-05-20
-
-- [2025-05-20] style: reformat README section — 2025-05-20
-
-- [2025-05-22] fix: small typo in docs — 2025-05-22
-
-- [2025-05-22] docs: add note about experiment — 2025-05-22
-
-- [2025-05-23] docs: add note about experiment — 2025-05-23
-
-- [2025-05-26] chore(docs): update README — 2025-05-26
-
-- [2025-05-26] chore: refresh examples — 2025-05-26
-
-- [2025-05-27] fix: small typo in docs — 2025-05-27
-
-- [2025-05-28] docs: add note about experiment — 2025-05-28
-
-- [2025-05-29] style: reformat README section — 2025-05-29
-
-- [2025-05-29] docs: add note about experiment — 2025-05-29
-
-- [2025-05-30] style: reformat README section — 2025-05-30
+Ilhom (ilhomJohn81)
+DevOps Engineer | Cloud Infrastructure Enthusiast | Open Source Contributor
